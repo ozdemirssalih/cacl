@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react'
 import { createClient } from '@supabase/supabase-js'
 
-const supabase = createClient(process.env.NEXT_PUBLIC_SUPABASE_URL!, process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!)
+const supabase = createClient('https://npnulyilaivagorzrfgw.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5wbnVseWlsYWl2YWdvcnpyZmd3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzAwOTQ5MTksImV4cCI6MjA4NTY3MDkxOX0.mn-iKVRGevj2FmWINwXqtc8xARP5Mh2kqMF3TDDnIc4')
 const CID = 'fc777863-e790-4774-98a5-a6b0af06a59f'
 const f = (n: number) => n.toLocaleString('tr-TR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
 
